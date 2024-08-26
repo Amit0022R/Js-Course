@@ -5,14 +5,14 @@
 // 7 Types: String, Number, Boolean, null, undefined, Symbol, bigInt
 
 // const score = 100
- const scoreValue = 100.3
+//  const scoreValue = 100.3
 
 // const isLoggedIn = false
- const outsideTemp = null
+//  const outsideTemp = null
 // let userEmail; // value is undefined
 
 // const id = Symbol('123')
- const anotherId = Symbol('123')
+//  const anotherId = Symbol('123')
 
 // console.log(id == anotherId); // false
 
@@ -23,24 +23,24 @@
 // Reference (non-primitive)
 // Array, Objects, Functions
 
-const heroes = ["amit", "anuj", "cena"];
-let myObj = {
-    name: "Amit",
-    age: 19,
-}
+// const heroes = ["amit", "anuj", "cena"];
+// let myObj = {
+//     name: "Amit",
+//     age: 19,
+// }
 
  // function ko js mei ek variable ki tarah treat krskte h
- const myFunction = function() {
-    console.log("HEloo World");
+//  const myFunction = function() {
+//     console.log("HEloo World");
 
- }
+ //}
 
- console.log(typeof bigNumber); // undefined
- console.log(typeof outsideTemp); // object
- console.log(typeof scoreValue); // number
- console.log(typeof myFunction); // function
- console.log(typeof heroes); // object
- console.log(typeof anotherId); // symbol
+//  console.log(typeof bigNumber); // undefined
+//  console.log(typeof outsideTemp); // object
+//  console.log(typeof scoreValue); // number
+//  console.log(typeof myFunction); // function
+//  console.log(typeof heroes); // object
+//  console.log(typeof anotherId); // symbol
  
  // https://262.ecma-international.org/5.1/#sec-11.4.3
 
@@ -63,3 +63,29 @@ let myObj = {
 
  */
  
+
+//////////////////////////////////////////////////////////////
+
+// There are two types of Memory:
+// Stack(Primitive) and Heap(Non-Primitive)
+
+let myYoutubename = "AnujAmit"
+
+let anothername = myYoutubename
+anothername = "Amitkumar"
+
+console.log(myYoutubename); // AnujAmit
+console.log(anothername); // Amitkumar
+
+let userOne = {
+       emial: "user@google.com",
+       upi: "user@wee",
+
+}
+
+let userTwo = userOne
+
+userTwo.emial = "amit@gmial.com"
+
+console.log(userOne.emial); // amit@gmial.com
+console.log(userTwo.emial); // amit@gmial.com
