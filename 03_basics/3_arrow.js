@@ -34,14 +34,23 @@ const user = {
 // chai()
 
 
-    const chai = function() {
+    const chai = () => {
     let username = "Mia ji"
-     console.log(this.username); // undefined
+     console.log(this.username); 
  }
 
- chai()
+ //chai()
  
 
+// const addTwo =  (num1, num2) => {
+//     return num1 + num2
+// }
 
+// const addTwo =  (num1, num2) => num1 + num2
 
+// const addTwo =  (num1, num2) => (num1 + num2)
+// console.log(addTwo(49,1)) // 50
 
+const addTwo =  (num1, num2) => ({username: "Amit"})//{ username: 'Amit'}
+
+console.log(addTwo(49,1)) // 50
