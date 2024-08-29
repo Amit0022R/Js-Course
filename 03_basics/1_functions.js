@@ -74,33 +74,71 @@
 // console.log(loginUserMessage()); // username toh likh ladle!!
 
 
-function loginUserMessage(username = "Amit") {
-    if(!username){ // equivalent to username === undefined
-        console.log("username toh likh ladle!!");
-        return    
-    }
-    return `${username} just logged in`
-}
-console.log(loginUserMessage()); // Amit just logged in
+// function loginUserMessage(username = "Amit") {
+//     if(!username){ // equivalent to username === undefined
+//         console.log("username toh likh ladle!!");
+//         return    
+//     }
+//     return `${username} just logged in`
+// }
+
+// console.log(loginUserMessage()); // Amit just logged in
 // if 84 mei kuch pass kroge toh wo username ko overwrite krdegi
 
+// console.log("Amit");
 
 
+//****************************************************
+
+// function calculateCartPrice(num1) {
+//     return num1;
+// }
+// console.log(calculateCartPrice(2)); // 2
+// console.log(calculateCartPrice(200,400,500)) // 200
+
+// ... => REST or SPREAD Operator
+// function calculateCartPrice(...num1) {
+//     return num1;
+// }
+// console.log(calculateCartPrice(200,400,500)) // [ 200, 400, 500 ]
+
+function calculateCartPrice(val1, val2, ...num1) {
+    return num1;
+}
+// console.log(calculateCartPrice(200,400,500,2000)) // [ 500, 2000 ]
+// val1 200 legya , val2 400 and remaining print hooge
+
+// how to pass object in functions and use it....
+const user = {
+    username: "Amit",
+    price: 199
+}
+
+function handleObject(anyObject) {
+
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+    
+}
+
+// console.log(handleObject(user)) // Username is Amit and price is 199
+
+// direct object pass krdiya
+handleObject({
+    username: "Amit's",
+    price: 3999
+})
 
 
+const myNewArray = [200,400,100,600]
 
+function returnSecondValue(getArray) {
 
+    return getArray[1]
+}
 
+// console.log(returnSecondValue(myNewArray)); // 400
 
-
-
-
-
-
-
-
-
-
+console.log(returnSecondValue([200,400,600,800,1000])); // 400
 
 
 
