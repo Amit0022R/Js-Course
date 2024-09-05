@@ -35,30 +35,30 @@
 //         break;
 // }
 
+// const month = "june"
 
-const month = "june"
+// switch (month) {
+//     case "january":
+//         console.log("1");
+//         break;
+//     case "febraury":
+//         console.log("2");
+//         break; 
+//     case "march":
+//         console.log("3");
+//         break; 
+//     case "april":
+//         console.log("4");
+//         break; 
+//     case "may":
+//         console.log("5");
+//         break; 
+//     case "june":
+//         console.log("6");
+//         break; 
 
-switch (month) {
-    case "january":
-        console.log("1");
-        break;
-    case "febraury":
-        console.log("2");
-        break; 
-    case "march":
-        console.log("3");
-        break; 
-    case "april":
-        console.log("4");
-        break; 
-    case "may":
-        console.log("5");
-        break; 
-    case "june":
-        console.log("6");
-        break; 
+//     default:
+//         console.log("default case match");   
+//         break;
+// }
 
-    default:
-        console.log("default case match");   
-        break;
-}
